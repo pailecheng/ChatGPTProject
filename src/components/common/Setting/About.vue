@@ -51,7 +51,7 @@ onMounted(() => {
       </div>
       <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
       <p v-if="isChatGPTAPI">
-        总金额：$120&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}
+        总金额：$120&nbsp;&nbsp;&nbsp;&nbsp;{{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}&nbsp;&nbsp;&nbsp;&nbsp;剩余金额：{{ 120-config?.usage }}
       </p>
     </div>
   </NSpin>
